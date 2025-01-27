@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Security Checklist</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Security Checklist</h1>
+        <p>Answer the following questions to assess your digital security:</p>
+        <form action="/results" method="post">
+            <label>
+                <strong>1. Do you use a password manager?</strong><br>
+                <input type="radio" name="password_manager" value="yes" required> Yes
+                <input type="radio" name="password_manager" value="no"> No
+            </label><br><br>
 
+            <label>
+                <strong>2. Have you enabled Two-Factor Authentication (2FA)?</strong><br>
+                <input type="radio" name="2fa" value="yes" required> Yes
+                <input type="radio" name="2fa" value="no"> No
+            </label><br><br>
+
+            <label>
+                <strong>3. Do you keep your software and devices updated?</strong><br>
+                <input type="radio" name="software_updates" value="yes" required> Yes
+                <input type="radio" name="software_updates" value="no"> No
+            </label><br><br>
+
+            <label>
+                <strong>4. Do you avoid using public Wi-Fi without a VPN?</strong><br>
+                <input type="radio" name="public_wifi" value="yes" required> Yes
+                <input type="radio" name="public_wifi" value="no"> No
+            </label><br><br>
+
+            <label>
+                <strong>5. Are you cautious of phishing attempts?</strong><br>
+                <input type="radio" name="phishing" value="yes" required> Yes
+                <input type="radio" name="phishing" value="no"> No
+            </label><br><br>
+
+            <label>
+                <strong>6. Do you use strong passcodes or biometrics to lock your devices?</strong><br>
+                <input type="radio" name="device_lock" value="yes" required> Yes
+                <input type="radio" name="device_lock" value="no"> No
+            </label><br><br>
+
+            <label>
+                <strong>7. Do you regularly back up your important data?</strong><br>
+                <input type="radio" name="backup" value="yes" required> Yes
+                <input type="radio" name="backup" value="no"> No
+            </label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
