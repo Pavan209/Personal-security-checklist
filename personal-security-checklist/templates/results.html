@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Recommendations</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Security Recommendations</h1>
+        {% if recommendations %}
+            <p>Based on your answers, here are some tips to improve your security:</p>
+            <ul>
+                {% for recommendation in recommendations %}
+                    <li>{{ recommendation }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Great job! You’re already following all the recommended security practices.</p>
+        {% endif %}
+        <a href="/">Go back to the checklist</a>
+    </div>
+</body>
+</html>
